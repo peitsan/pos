@@ -101,10 +101,12 @@ class RBTree {
         // 右旋
         // void rightRotate(RBTNode<T>* &root, RBTNode<T>* y);
         void RBTree<T>::rightRotate(RBTNode<T>* &root, RBTNode<T>* x){
-
+            
         }
         // 插入函数
-        void insert(RBTNode<T>* &root, RBTNode<T>* node);
+        void RBTree<T>::insert(RBTNode<T>* &root, RBTNode<T>* node){
+            insert(&root->parent,node)
+            };
         // 插入修正函数
         void insertFixUp(RBTNode<T>* &root, RBTNode<T>* node);
         // 删除函数
